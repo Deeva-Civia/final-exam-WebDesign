@@ -1,1 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "sidenav    header"
+        "sidenav    main"
+        "sidenav    footer";
+    height: 100vh;
+}
+
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #648DA7;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none; 
+}
+
+
+.sidenav {
+    grid-area: sidenav;
+    background-color: #3A4364;
+    color: white;
+    padding-top: 2rem;
+}
+
+.sidenav__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav__list-item {
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.sidenav__close-icon {
+    display: none; 
+}
+
+.main {
+    grid-area: main;
+    background-color: #90D4D9;
+    padding: 1rem;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #E3E4E6;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: #728293;
+}
+
+.main-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.overviewcard {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #A4B7DB;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #82BEF6;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+}
+
+.main-cards .card:first-child {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #648DA7;
+    color: white;
+}
