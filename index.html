@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+      <div class="side-nav-header">
+        <h2>Dashboard</h2>
+        <button class="menu-toggle" id="close-side-nav">✕</button>
+      </div>
+      <ul class="side-nav-menu">
+        <li>🏠 Dashboard</li>
+        <li>🛒 Pesanan</li>
+        <li>📦 Produk</li>
+        <li>👤 Pelanggan</li>
+        <li>📊 Laporan Keuangan</li>
+        <li>⚙️ Pengaturan</li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-left">
+          <button id="open-side-nav" class="menu-toggle">☰</button>
+          <input type="text" placeholder="Cari Produk" class="search-input">
+        </div>
+        <div class="header-right">
+          <button class="notification-button">
+            🔔 <span class="notification-count">3</span>
+          </button>
+          <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+            <span>Shopi Admin</span>
+            <button>🚪</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <main>
+        <section class="welcome-section">
+          <h1>Halo, Shopi Admin!</h1>
+          <p>Selamat datang di dashboard admin Anda. Berikut adalah ringkasan aktivitas toko hari ini.</p>
+        </section>
+
+        <section class="overview-cards">
+          <div class="card">
+            <h3>Total Penjualan</h3>
+            <p>Rp 125.000.000</p>
+          </div>
+          <div class="card">
+            <h3>Pesanan Masuk</h3>
+            <p>42 Pesanan</p>
+          </div>
+          <div class="card">
+            <h3>Pelanggan Baru</h3>
+            <p>17 Pelanggan</p>
+          </div>
+          <div class="card">
+            <h3>Stok Produk</h3>
+            <p>89 Produk</p>
+          </div>
+        </section>
+
+        <section class="charts">
+          <div class="chart">
+            <h2>Grafik Penjualan</h2>
+            <div class="chart-placeholder">Grafik Penjualan Bulanan</div>
+          </div>
+          <div class="chart">
+            <h2>Laporan Keuangan</h2>
+            <div class="report">
+              <div><span>Total Laba</span><span>Rp 75.000.000</span></div>
+              <div><span>Pengeluaran</span><span>Rp 25.000.000</span></div>
+              <div><span>Biaya Iklan</span><span>Rp 5.000.000</span></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div>&copy; 2024 E-Commerce Dashboard</div>
+        <div>Dibuat dengan ❤️ oleh Tim Inovasi</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
