@@ -50,15 +50,15 @@ body {
 
 .header__avatar {
     display: flex;
+    gap:0.2rem;
     align-items: center;
-    gap: 0.75rem;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .header__avatar img {
     width: 40px;
-    height: 30px;
+    height: 35px;
     margin-right: 0;
 }
 
